@@ -14,7 +14,7 @@ A simple React application to browse and book events in Bangalore.
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/yourusername/react-web.git
+git clone https://github.com/rittik987/react-web.git
 cd react-web
 ```
 
@@ -37,12 +37,12 @@ http://localhost:5173
 
 ## Features
 
-- Browse all events with sorting (by date, price, name)
+- Browse all events with sorting (by date, price)
 - View full event details
 - Add events to cart
 - Remove events from cart
 - See total booking amount
-- Cart data saved in browser (works after page refresh)
+- Cart data saved in localstoarge
 
 ---
 
@@ -82,7 +82,7 @@ View all booked events with total amount
 ---
 
 ### 4. Empty Cart
-Empty state when no events are booked
+Empty state when no events are in cart
 
 ![Empty Cart](./screenshots/4-empty-cart.png)
 
@@ -106,14 +106,40 @@ Cart counter and sorting functionality
 
 ```
 react-web/
+├── public/
+│   └── images/              # Event images
+├── screenshots/             # Project screenshots (6 images)
+│   ├── 1-event-list.png
+│   ├── 2-event-details.png
+│   ├── 3-cart-items.png
+│   ├── 4-empty-cart.png
+│   ├── 5-mobile-view.png
+│   └── 6-cart-badge-sorting.png
 ├── src/
-│   ├── components/       # Navbar, EventCard
-│   ├── pages/           # EventList, EventDetails, BookingCart
-│   ├── context/         # BookingContext (cart management)
-│   ├── data/            # events.json
-│   └── App.jsx
-├── public/images/       # Event images
-└── README.md
+│   ├── assets/
+│   ├── components/
+│   │   ├── EventCard.jsx
+│   │   └── Navbar.jsx
+│   ├── context/
+│   │   └── BookingContext.jsx
+│   ├── data/
+│   │   └── events.json
+│   ├── pages/
+│   │   ├── BookingCart.jsx
+│   │   ├── EventDetails.jsx
+│   │   └── EventList.jsx
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+├── .gitignore
+├── eslint.config.js
+├── index.html
+├── package.json
+├── package-lock.json
+├── postcss.config.js
+├── README.md
+├── tailwind.config.js
+└── vite.config.js
 ```
 
 ---
@@ -126,3 +152,24 @@ react-web/
 4. Cart page shows all booked events
 5. User can remove events or proceed to checkout
 6. Cart data is saved and persists after refresh
+
+Assignment Completion
+This project was built as part of a React.js Internship Assignment. All requirements from the assignment have been successfully implemented:
+ Event List Page - Displays events with title, date, location, and price from JSON data with sorting functionality
+ Event Details Page - Shows complete event details with a "Book Now" button that adds events to the cart
+ Booking Cart Page - Displays selected events with total amount and remove option
+
+
+Technical Requirements Met:
+
+ React with functional components and hooks
+ Context API for state management
+ Tailwind CSS for styling
+ Proper folder structure
+ Clean, maintainable code
+
+✅ Deliverables:
+
+GitHub repository at /react-web
+README with setup instructions
+Screenshots of all working pages
