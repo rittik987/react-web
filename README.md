@@ -108,13 +108,8 @@ Cart counter and sorting functionality
 react-web/
 ├── public/
 │   └── images/              # Event images
-├── screenshots/             # Project screenshots (6 images)
-│   ├── 1-event-list.png
-│   ├── 2-event-details.png
-│   ├── 3-cart-items.png
-│   ├── 4-empty-cart.png
-│   ├── 5-mobile-view.png
-│   └── 6-cart-badge-sorting.png
+├── screenshots/             # Project screenshots 
+│  
 ├── src/
 │   ├── assets/
 │   ├── components/
