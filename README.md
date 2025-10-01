@@ -1,16 +1,128 @@
-# React + Vite
+# Event Booking Web App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React application to browse and book events in Bangalore.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Setup Instructions
 
-## React Compiler
+### Prerequisites
+- Node.js (v18 or higher)
+- npm
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Steps to Run
 
-## Expanding the ESLint configuration
+1. **Clone the repository**
+```bash
+git clone https://github.com/yourusername/react-web.git
+cd react-web
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+2. **Install dependencies**
+```bash
+npm install
+```
+
+3. **Start the app**
+```bash
+npm run dev
+```
+
+4. **Open in browser**
+```
+http://localhost:5173
+```
+
+---
+
+## Features
+
+- Browse all events with sorting (by date, price, name)
+- View full event details
+- Add events to cart
+- Remove events from cart
+- See total booking amount
+- Cart data saved in browser (works after page refresh)
+
+---
+
+## Technologies Used
+
+- **React** - UI components
+- **Vite** - Development tool
+- **React Router** - Page navigation
+- **Context API** - Cart state management
+- **Tailwind CSS** - Styling
+- **lucide-react** - Icons
+- **localStorage** - Data storage
+
+---
+
+## Screenshots
+
+### 1. Event List Page
+Browse all available events with sorting option
+
+![Event List](./screenshots/1-event-list.png)
+
+---
+
+### 2. Event Details Page
+View complete event information and book the event
+
+![Event Details](./screenshots/2-event-details.png)
+
+---
+
+### 3. Booking Cart - With Items
+View all booked events with total amount
+
+![Cart with Items](./screenshots/3-cart-items.png)
+
+---
+
+### 4. Empty Cart
+Empty state when no events are booked
+
+![Empty Cart](./screenshots/4-empty-cart.png)
+
+---
+
+### 5. Mobile View
+Responsive design for mobile devices
+
+![Mobile View](./screenshots/5-mobile-view.png)
+
+---
+
+### 6. Cart Badge & Sorting
+Cart counter and sorting functionality
+
+![Cart Badge](./screenshots/6-cart-badge-sorting.png)
+
+---
+
+## Project Structure
+
+```
+react-web/
+├── src/
+│   ├── components/       # Navbar, EventCard
+│   ├── pages/           # EventList, EventDetails, BookingCart
+│   ├── context/         # BookingContext (cart management)
+│   ├── data/            # events.json
+│   └── App.jsx
+├── public/images/       # Event images
+└── README.md
+```
+
+---
+
+## How It Works
+
+1. User browses events on homepage
+2. Clicks on event to see details
+3. Clicks "Book Now" to add to cart
+4. Cart page shows all booked events
+5. User can remove events or proceed to checkout
+6. Cart data is saved and persists after refresh
