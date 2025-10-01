@@ -148,23 +148,24 @@ react-web/
 5. User can remove events or proceed to checkout
 6. Cart data is saved and persists after refresh
 
-Assignment Completion
-This project was built as part of a React.js Internship Assignment. All requirements from the assignment have been successfully implemented:
- Event List Page - Displays events with title, date, location, and price from JSON data with sorting functionality
- Event Details Page - Shows complete event details with a "Book Now" button that adds events to the cart
- Booking Cart Page - Displays selected events with total amount and remove option
+## Assignment Completion
 
+This project was built as part of a **React.js Internship Assignment**. All requirements from the assignment have been successfully implemented:
 
-Technical Requirements Met:
+ **Event List Page** - Displays events with title, date, location, and price from JSON data with sorting functionality
 
- React with functional components and hooks
- Context API for state management
- Tailwind CSS for styling
- Proper folder structure
- Clean, maintainable code
+ **Event Details Page** - Shows complete event details with a "Book Now" button that adds events to the cart
 
-✅ Deliverables:
+ **Booking Cart Page** - Displays selected events with total amount and remove option
 
-GitHub repository at /react-web
-README with setup instructions
-Screenshots of all working pages
+ **Technical Requirements Met:**
+- React with functional components and hooks
+- Context API for state management
+- Tailwind CSS for styling
+- Proper folder structure
+- Clean, maintainable code
+
+ **Deliverables:**
+- GitHub repository at `/react-web`
+- README with setup instructions
+- Screenshots of all working pages
